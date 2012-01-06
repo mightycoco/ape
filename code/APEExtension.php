@@ -18,7 +18,11 @@ class APEExtension extends DataExtension {
 	}
 	
 	public function build_js() {
+<<<<<<< HEAD
 		$methods = $this->ExportedMethods();
+=======
+		//$methods = $this->ExportedMethods();
+>>>>>>> d7b38cf14c3efa9831d5a5bc981a3f529df5f1cc
 
 		$func = "";
 		$func .= "{$this->owner->ClassName} = {};\n\n";
@@ -50,7 +54,11 @@ class APEExtension extends DataExtension {
 	}
 	
 	public function index() {
+<<<<<<< HEAD
 		//$this->build_js();
+=======
+		$this->build_js();
+>>>>>>> d7b38cf14c3efa9831d5a5bc981a3f529df5f1cc
 		
 		Requirements::javascript("sapphire/thirdparty/jquery/jquery.js");
 		Requirements::javascript("ape/js/ape.engine.js");
