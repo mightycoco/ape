@@ -24,17 +24,17 @@ Object::add_extension('Page', 'APEExtension');
 
 Edit /mysite/Page.php and export your first function HelloWorld($arg0, $arg1)
 
-<?php
-class Page extends SiteTree {
+    <?php
+    class Page extends SiteTree {
 
-	public static $ape_export = array (
-		'HelloWorld'
-	);
+    	public static $ape_export = array (
+		    'HelloWorld'
+	    );
 	
-	public function HelloWorld($firstname, $lastname) {
-		return "Hello $lastname, $firstname";
-	}
+	    public function HelloWorld($firstname, $lastname) {
+    		return "Hello $lastname, $firstname";
+	    }
 	
-	...
+    	...
 	
 Call ./apecfg/build to rebuld the javascript files
